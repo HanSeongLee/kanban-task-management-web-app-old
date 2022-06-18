@@ -10,9 +10,15 @@ const Logo: React.FC<AnchorHTMLAttributes<HTMLAnchorElement>> = ({ className, ..
                {...props}
             >
                 <h1>
-                    <img src={''}
-                         alt={'kanban'}
-                    />
+                    <picture>
+                        <source srcSet={'/logo-mobile.svg'}
+                                media={'(max-width: 992px)'}
+                        />
+
+                        <img src={'/logo-light.svg'}
+                             alt={'kanban'}
+                        />
+                    </picture>
                 </h1>
             </a>
         </Link>
