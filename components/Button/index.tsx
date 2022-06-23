@@ -3,13 +3,14 @@ import styles from './style.module.scss';
 import cn from 'classnames';
 
 interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: 'primary';
+    variant?: 'primary'| 'danger';
 };
 
 const Button: React.FC<IProps> = ({ variant, className, children, ...props }) => {
     return (
         <button className={cn(styles.button, {
             [styles.primary]: variant === 'primary',
+            [styles.danger]: variant === 'danger',
         }, className)}
                 type={'button'}
                 {...props}
