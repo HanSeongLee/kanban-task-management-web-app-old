@@ -20,7 +20,17 @@
     line-height: 23px;
     color: #FFFFFF;
     background: #EA5555;
-    border-radius: 24px;
+    border-radius: 20px;
     padding: 8px 15px 9px;
+  }
+
+  &.default {
+    min-height: 40px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 23px;
+    color: #635FC7;
+    background: rgba(99, 95, 199, 0.1);
+    border-radius: 20px;
   }
 }

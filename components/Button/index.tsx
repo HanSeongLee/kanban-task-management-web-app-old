@@ -3,7 +3,7 @@ import styles from './style.module.scss';
 import cn from 'classnames';
 
 interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: 'primary'| 'danger';
+    variant?: 'primary'| 'default' | 'danger';
 };
 
 const Button: React.FC<IProps> = ({ variant, className, children, ...props }) => {
@@ -11,6 +11,7 @@ const Button: React.FC<IProps> = ({ variant, className, children, ...props }) =>
         <button className={cn(styles.button, {
             [styles.primary]: variant === 'primary',
             [styles.danger]: variant === 'danger',
+            [styles.default]: variant === 'default',
         }, className)}
                 type={'button'}
                 {...props}
@@ -21,7 +22,7 @@ const Button: React.FC<IProps> = ({ variant, className, children, ...props }) =>
 };
 
 Button.defaultProps = {
-    variant: 'primary',
+    variant: 'default',
 };
 
 export default Button;

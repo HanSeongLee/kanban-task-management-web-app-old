@@ -14,7 +14,9 @@ const EmptyBoard: React.FC<IProps> = ({ onAddNewColumn, className, ...props }) =
         >
             This board is empty. Create a new column to get started.
 
-            <Button onClick={onAddNewColumn}>
+            <Button onClick={onAddNewColumn}
+                    variant={'primary'}
+            >
                 + Add New Column
             </Button>
         </div>
