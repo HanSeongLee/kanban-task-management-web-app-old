@@ -1,0 +1,29 @@
+
+.deleteBoardBox {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 24px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 24px;
+
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #EA5555;
+  }
+
+  .description {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    color: #828FA3;
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+  }
+}
